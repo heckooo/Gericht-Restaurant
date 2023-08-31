@@ -4,17 +4,17 @@ import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 import { meal } from '../../constants';
 import './Intro.css';
 
-const Intro = () => {
+const Intro: React.FC = () => {
   const [playVideo, setPlayVideo] = useState(false)
-  const vidRef = React.useRef();
+  const vidRef = React.useRef<HTMLVideoElement>(null);
 
   const handleVideo = () => {
     setPlayVideo((prevPlayVideo) => !prevPlayVideo);
 
     if (playVideo) {
-      vidRef.current.pause();
+      vidRef.current!.pause();
     } else {
-      vidRef.current.play();
+      vidRef.current!.play();
     }
   }
 
@@ -23,8 +23,6 @@ const Intro = () => {
       <video
         src={meal}
         ref={vidRef}
-        type="video/mp4"
-        Loop
         controls={false}
         muted
       />

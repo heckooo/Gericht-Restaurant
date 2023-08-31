@@ -7,16 +7,14 @@ import './Gallery.css';
 
 const imgs = [images.gallery01, images.gallery02, images.gallery03, images.gallery04];
 
-const Gallery = () => {
-  const scrollRef = useRef(null);
+const Gallery: React.FC = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-  const scroll = (direction) => {
-    const { current } = scrollRef;
-
-    if (direction === 'left') {
-      current.scrollLeft -= 300;
+  const scroll = (direction: "left" | "right") => {   
+    if (direction === "left") {
+      scrollRef.current!.scrollLeft -= 300;
     } else {
-      current.scrollLeft += 300;
+      scrollRef.current!.scrollLeft += 300;
     }
   }
 

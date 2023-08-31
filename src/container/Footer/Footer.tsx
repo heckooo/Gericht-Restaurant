@@ -5,7 +5,7 @@ import { images } from '../../constants';
 import { FooterOverlay, Newsletter } from '../../components';
 import './Footer.css';
 
-const Footer = () => (
+const Footer: React.FC = () => (
   <div className="app__footer section__padding">
     <FooterOverlay />
     <Newsletter />some

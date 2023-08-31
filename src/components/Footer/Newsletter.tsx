@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { SubHeading } from '../../components';
+import { SubHeading } from '..';
 import './Newsletter.css';
 
-const Newsletter = () => (
+const Newsletter: React.FC = () => (
   <div className="app__newsletter"> 
     <div className="app__newsletter-heading">
       <SubHeading title="Newsletter" />

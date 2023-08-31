@@ -4,7 +4,15 @@ import { SubHeading } from '../../components';
 import { images, data } from '../../constants';
 import './Laurels.css';
 
-const AwardCard = ({ award: { imgUrl, title, subtitle }}) => (
+
+interface IProps {
+  award: any;
+  imgUrl?: string;
+  subtitle?: string;
+  title: string;
+}
+
+const AwardCard: React.FC<IProps> = ({ award: { imgUrl, title, subtitle }}) => (
   <div className="app__laurels_awards-card">
     <img src={imgUrl} alt="award" />
     <div className="app__laurels_awards-card_content">

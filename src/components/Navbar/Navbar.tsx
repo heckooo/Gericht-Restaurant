@@ -5,7 +5,7 @@ import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from '../../constants/images';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
