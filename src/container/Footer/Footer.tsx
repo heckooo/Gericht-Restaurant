@@ -38,6 +38,7 @@ const Footer: React.FC = () => (
     </div>
     <div className="footer__copyright">
       <p className="p__opensans">2021 Gerícht. All Rights reserved.</p>
+      <p className="p__opensans">Website coded by Patryk Hecko</p>
     </div>
   </div>
 );

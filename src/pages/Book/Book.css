@@ -1,0 +1,35 @@
+.book__bg {
+  background: url('../../assets/bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  letter-spacing: 0.04em;
+  /* text-transform: uppercase; */
+  line-height: 117px;
+  font-size: 90px;
+  margin-top: 2rem;
+}
+
+.book__form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.book__btn {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: var(--color-golden);
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+}

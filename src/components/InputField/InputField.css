@@ -1,0 +1,18 @@
+.input__container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  color: var(--color-golden);
+  font-weight: 700;
+  font-size: 2rem;
+  /* width: 100%; */
+}
+
+input {
+  background: transparent;
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-golden);
+  color: var(--color-golden);
+  padding: 0.5rem;
+  font-size: 1rem;
+}
